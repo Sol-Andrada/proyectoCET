@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sol Andrada">
+  <meta name="description" content="aplicacion web proyecto cet">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <!-- Titulo -->
+  <title>Agua | Sol Andrada </title>
+  <!-- Favicon -->
+  <link rel="icon" type="image-x-icon" href="images/agua-favicon2.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Noto+Sans+KR:wght@500&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!--Bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#Home">
+        <img src="images/agua-favicon2.png" width="50" alt="icono gota">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#hero">INICIO</a>
+          <a class="nav-link" href="#cartas">ARTICULOS</a>
+          <a class="nav-link" href="#articulo">CONTAMINACIÓN</a>
+          <a class="nav-link dona" href="donaForm.html">DONA</a>
+       </div>
+      </div>
+    </div>
+  </nav>
+<!-- Seccion Hero -->
+<section id="hero" class="hero align-items-stretch">
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <div class="info">
+      <h1>LA IMPORTANCIA<BR> VITAL <BR>DEL AGUA</h1>
+      <h2 class="hero2">El acceso al agua limpia y segura se convirtió en una necesidad crítica para proteger la salud y el bienestar
+         de las personas en áreas afectadas por la pandemia.</h2>
+          <a href="https://www.fundacionaquae.org/wiki/importancia-del-agua/#:~:text=Sin%20beber%20agua%20no%20podríamos,a%20través%20de%20la%20sangre."><button type="button" class="btn btn-dark">Leer mas</button></a>
+    </div>
+  </div>
+</section>
+
+<!-- Cards -->
+<div class="cards" id="cartas">
+  <!-- card 1 -->
+  <div class="card col-12 col-md-6 col-lg-4">
+    <img src="images/manos.jfif" class="card-img" alt="agua">
+    <div class="card-body">
+      <h1 class="card-title">COVID 19</h1>
+      <P class="card-sub-title">El lavado de manos salva vidas</P>
+      <p class="card-info">
+        Durante el COVID-19, el lavado de manos con agua y jabón es crucial para prevenir la propagación del virus. El agua juega un papel fundamental en mantenernos seguros y reducir el riesgo de infección.</p>
+        <a href="https://www.campusvirtualsp.org/es/curso/covid-19-precauciones-basicas-higiene-de-las-manos-2020#:~:text=Higienizarse%20las%20manos%20en%20los,con%20la%20atención%20de%20salud.">
+          <button type="button" class="btn btn-dark">Leer mas</button>
+         </a>
+    </div>
+  </div>
+
+  <!-- card 2 -->
+  <div class="card col-12 col-md-6 col-lg-4">
+    <img src="images/niños.jfif" class="card-img" alt="agua">
+    <div class="card-body">
+      <h1 class="card-title">Sequia</h1>
+      <P class="card-sub-title">Argentinos sin acceso a agua</P>
+      <p class="card-info">El 22% de los 44 millones de habitantes no tiene acceso a la red pública de agua y cuatro de cada diez no tienen cloacas. Estas situaciones impactan en la salud pública provocando cuadros de parasitosis que afectan a los niños.</p>
+     <a href="https://www.mundosano.org/es/el-22-de-los-44-millones-de-argentinos-no-tiene-agua-de-red-y-cuatro-de-cada-diez-vive-sin-cloacas/">
+      <button type="button" class="btn btn-dark">Leer mas</button>
+     </a>
+    </div>
+  </div>
+
+  <!-- card 3 -->
+  <div class="card col-12 col-md-6 col-lg-4">
+    <img src="images/rio contaminado.jfif" class="card-img" alt="agua">
+    <div class="card-body">
+      <h1 class="card-title">polución</h1>
+      <P class="card-sub-title">Efectos de agroquimicos</P>
+      <p class="card-info">Las personas jóvenes de los pueblos fumigados con agrotóxicos tienen 2,5 veces más probabilidad de padecer y morir de cáncer que las personas que viven lejos de los agroquímicos</p>
+      <a href="https://www.pagina12.com.ar/525236-una-investigacion-confirma-vinculos-entre-agua-agroquimicos-">
+        <button type="button" class="btn btn-dark">Leer mas</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- card 4 -->
+  <div class="card col-12 col-md-6 col-lg-4">
+    <img src="images/rio.jfif" class="card-img" alt="agua">
+    <div class="card-body">
+      <h1 class="card-title">RECICLAJE</h1>
+      <P class="card-sub-title">Mas reciclaje, menos contaminación</P>
+      <p class="card-info">Se desconoce la cantidad exacta de plásticos en los mares, pero se estiman unos 5-50 billones de fragmentos de plástico, sin incluir los trozos que hay en el fondo marino o en las playas.
+      </p>
+      <a href="https://www.fundacionaquae.org/wiki/mas-reciclajemenos-contaminacion-del-agua/">
+        <button type="button" class="btn btn-dark">Leer mas</button>
+      </a>
+    </div>
+  </div>
+
+</div>
+  <!-- otro articulo -->
+  <section id="articulo" class="hero align-items-stretch">
+    <div class="container2 d-flex flex-column justify-content-center align-items-center">
+      <div class="articulo2">
+        <h1>PRINCIPALES CAUSAS Y CONSECUENCIAS  <BR>DE LA CONTAMINACION DEL AGUA
+        </h1>
+        <p class="parrafo">
+          La higiene de manos es una práctica vital para prevenir infecciones en entornos de atención médica. En Argentina, se ha observado una disminución del 30% en la tasa de infecciones asociadas a la atención de la salud en el último año gracias a la mejora en la higiene de manos, lo que ha tenido un impacto positivo en la calidad de la atención médica y ha contribuido a salvar vidas</p>
+          <a href="https://www.paho.org/es/noticias/17-11-2021-higiene-manos-salva-vidas">
+            <button type="button" class="btn btn-dark">Leer mas</button>
+          </a> 
+         
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="icono-footer">
+    <img class="footer-icono" src="images/chicas_registrado.svg"  alt="logo sol">
+  </div>
+  <div class="redesSociales">
+    <a href="https://www.facebook.com/chicasentecnologia/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+    <a href="https://twitter.com/chicasentec?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bi bi-twitter"></i></a>
+    <a href="https://www.instagram.com/chicasentec/?hl=es"><i class="bi bi-instagram"></i></a>
+    <a href="donaForm.html"><i class="bi bi-heart-fill"></i></i></a>
+  </div>
+  <div class="derechos-de-autor align-item-center">Creado por Sol Andrada (2023) ©</div>
+</footer>
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<!-- Link JavaScript -->
+<script src="main.js"></script>
+</body>
+</html>

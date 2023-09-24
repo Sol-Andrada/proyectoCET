@@ -1,0 +1,269 @@
+/* navbar */
+.navbar{
+    padding: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; 
+    background-color: #7e90b186;
+    position: fixed;
+    z-index: 1000;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+.nav-link{
+    font-family: 'Noto Sans KR', cursive;
+    font-size:medium;
+}
+.dona {
+   margin: 0 20px;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   color: #fff;
+   outline: 2px solid #fff ;
+   position: relative;
+   overflow: hidden;
+   transition: color 1s;
+}
+.dona:hover{
+    color: red;
+}
+.dona::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+.dona:hover::before{
+    width: 150%;
+}
+
+/* HERO */
+#hero{
+    width: 100%;
+    color: #fff;
+    font-family: Jost, cursive;
+    padding: 350px;
+    background: url(images/botellass.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+.container2{
+    width: 90%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* cards  */
+.cards{
+    background-color: #7e90b186;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+} 
+.card{
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 50px;
+    flex-flow: wrap;
+    display: inline-block; 
+    flex-direction: column;
+    align-items: center;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px; 
+    display: block;
+}
+.card-body{
+    width: 100%;
+    height: 100%;
+    top:0;
+    right:-100%;
+    position: absolute;
+    background: #7e90b186;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color:#000000;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+.card:hover .card-body{
+    right: 0;
+}
+.card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+.card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+/* otro articulo */
+#articulo{
+    width: 100%;
+    color: #fcfcfc;
+    font-weight: bolder;
+    font-family: Jost, cursive;
+    padding: 350px;
+    background: url(images/fondo8.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    
+    
+}
+.parrafo{
+    color: #cdedf8;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.hero2{
+    color: #cdedf8;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* footer */
+.footer {
+    background-color: #100e0e;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+
+.redesSociales, .icono-footer {
+    flex: 1;
+    padding: 20px;
+}
+
+.redesSociales {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    padding-top: 15px;
+    width: 300px;   
+}
+.redesSociales a i {
+    color: gray;
+    font-size: 30px; 
+}
+
+.icono-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+
+.footer-icono {
+    width: 250px;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+}
+/* Responsive */
+@media (max-width: 1800px) {
+    #hero {
+      padding: 200px;
+    }
+    #articulo{
+        padding: 200px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .dona {
+        margin: 0; 
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: red; 
+        outline: none; 
+        position: static; 
+        overflow: visible; 
+        transition: none;
+    }
+    .dona:hover::before {
+        width: 0; 
+    }
+}
+
+
+@media screen and (max-width: 1390px) {
+        
+    .card {
+        width: 224px; 
+        height: 350px; 
+        border-radius: 14px;
+        margin: 35px; 
+     }
+    .card-img {
+         border-radius: 10px;       
+     }
+     .card-body {
+        border-radius: 10px;  
+        padding: 21px; 
+        }
+        
+        .card-title { 
+        font-size: 35px; 
+        }
+        
+        .card-sub-title {
+        font-size: 11px; 
+        }
+        
+        .card-info {
+        font-size: 11px; 
+        line-height: 18px; 
+        margin: 28px 0; 
+        
+    }
+ }
